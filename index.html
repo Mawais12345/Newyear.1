@@ -152,7 +152,7 @@ button:hover{transform:scale(1.05)}
 <section id="surprise">
   <div class="card">
     <h1>Hi my Bhalooooo 🥺💗</h1>
-    <p>I made something special just for you ✨  
+    <p>I made something special just for you ✨    
     Are you ready to open it? 👀💖</p>
     <button onclick="go('folders',20)">YES 😍</button>
     <button id="noBtn">NO 😒</button>
@@ -195,20 +195,37 @@ button:hover{transform:scale(1.05)}
       My dearest <b>Bhalooooo</b> 🥺❤️,<br><br>
       As 2026 begins 🎆, I want you to know how deeply you matter to me.
       Every smile 😊, every call 📞, every little moment with you makes my heart feel at home 🫶.<br><br>
-      From <b>Awaisss</b> 💌 to <b>Bhalooooo</b> 🧸,
-      this New Year is a promise ✨ —  
+      From <b>Aima</b> 💌 to <b>Bhalooooo</b> 🧸,
+      this New Year is a promise ✨ —
       a promise of love ❤️, care 🤍, laughter 😂, and countless memories together 📸.<br><br>
-      Happy New Year, my love 🎉💖  
+      Happy New Year, my love 🎉💖
       You are my today, my tomorrow, and my always 🌙✨
     </p>
 
-    <button onclick="reply()">Reply to Awais 💬💖</button>
+    <!-- FIXED WhatsApp Button with your number -->
+    <a
+      href="https://wa.me/923438506976?text=Happy%20New%20Year%20Awaissss%20🎆💖%0AThis%20website%20made%20me%20so%20emotional%20🥺❤️%0AI%20loved%20everything%20about%20it%20✨🫂"
+      target="_blank"
+      style="
+        display:inline-block;
+        margin-top:24px;
+        padding:14px 36px;
+        font-size:17px;
+        border-radius:999px;
+        background:linear-gradient(135deg,#ff758c,#ff7eb3);
+        color:white;
+        text-decoration:none;
+      "
+    >
+      Reply to Awaissss 💬💖
+    </a>
   </div>
 </section>
 
 <script>
 const sections=document.querySelectorAll("section");
 const bar=document.getElementById("bar");
+
 function go(id,p){
   sections.forEach(s=>s.classList.remove("active"));
   document.getElementById(id).classList.add("active");
@@ -245,11 +262,6 @@ function openImg(el){
 }
 function closeImg(){
   document.getElementById("viewer").style.display="none";
-}
-
-// Reply
-function reply(){
-  window.open("https://wa.me/?text=Happy%20New%20Year%20Aima%20💖🎆","_blank");
 }
 
 // NO button
